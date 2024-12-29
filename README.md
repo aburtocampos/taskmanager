@@ -54,24 +54,24 @@ Task Manager API es un backend diseñado para manejar tareas de manera eficiente
 
 ---
 
-## **Instalación y Configuración**
+## **4.Instalación y Configuración**
 
-### **1. Requisitos previos**
+### **Requisitos previos**
 
 - Node.js instalado (v14 o superior).
 - MongoDB Atlas o instancia local de MongoDB.
 
-### **2. Clonar el repositorio**
+### **Clonar el repositorio**
 
 ##bash
 git clone https://github.com/tu-usuario/task-manager-api.git
 cd task-manager-api
 
-### **3. Instalar dependencias
+### **Instalar dependencias
 bash
 Copiar código
 npm install
-### **4. Configurar las variables de entorno
+### **Configurar las variables de entorno
 Crea un archivo .env en la raíz del proyecto con el siguiente contenido:
 
 plaintext
@@ -82,13 +82,13 @@ JWT_SECRET=your_super_secret_key
 MONGO_URI: Reemplaza <username> y <password> con tus credenciales de MongoDB.
 JWT_SECRET: Una clave secreta para firmar y verificar los tokens JWT.
 
-### **5. Iniciar el servidor
+### **Iniciar el servidor
 bash
 Copiar código
 npm start
 El servidor estará disponible en http://localhost:3001.
 
-Estructura del Proyecto
+### **5.Estructura del Proyecto
 plaintext
 Copiar código
 task-manager-api/
@@ -114,7 +114,7 @@ task-manager-api/
 ├── package.json                # Dependencias del proyecto
 ├── server.js                   # Entrada principal del servidor
 └── README.md                   # Documentación del proyecto
-Descripción de Archivos
+### **6.Descripción de Archivos
 Configuración
 src/config/db.js
 
@@ -157,7 +157,7 @@ Swagger
 src/swagger/swaggerConfig.js
 Configura Swagger para documentar y mostrar los endpoints de la API.
 
-Endpoints
+### **7.Endpoints
 Autenticación
 POST /api/auth/register: Registrar un nuevo usuario.
 POST /api/auth/login: Iniciar sesión y obtener un token JWT.
@@ -167,11 +167,11 @@ GET /api/tasks: Listar todas las tareas (puede filtrarse por estado).
 GET /api/tasks/:id: Obtener una tarea específica.
 PUT /api/tasks/:id: Actualizar una tarea existente.
 DELETE /api/tasks/:id: Eliminar una tarea.
-Autenticación JWT
+### **8.Autenticación JWT
 Registro: Los usuarios pueden registrarse enviando un nombre de usuario y contraseña.
 Inicio de Sesión: Genera un token JWT que se debe usar en el encabezado Authorization para rutas protegidas.
 Protección de Rutas: Rutas como /api/tasks están protegidas y requieren un token JWT válido.
-Pruebas
+### **9.Pruebas
 Registro
 bash
 Copiar código
@@ -192,21 +192,3 @@ Content-Type: application/json
     "username": "testuser",
     "password": "password123"
 }
-### **Contribuciones
-Haz un fork del proyecto.
-Crea una nueva rama:
-bash
-Copiar código
-git checkout -b nueva-funcionalidad
-Haz commit de tus cambios:
-bash
-Copiar código
-git commit -m "Añadir nueva funcionalidad"
-Haz push de tu rama:
-bash
-Copiar código
-git push origin nueva-funcionalidad
-Abre un Pull Request.
-
-
-r
