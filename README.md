@@ -86,7 +86,7 @@ JWT_SECRET: Una clave secreta para firmar y verificar los tokens JWT.
 bash
 Copiar código
 npm start
-El servidor estará disponible en http://localhost:3001.
+El servidor estará disponible en http://localhost:3001
 
 ### **5.Estructura del Proyecto
 plaintext
@@ -114,6 +114,7 @@ task-manager-api/
 ├── package.json                # Dependencias del proyecto
 ├── server.js                   # Entrada principal del servidor
 └── README.md                   # Documentación del proyecto
+
 ### **6.Descripción de Archivos
 Configuración
 src/config/db.js
