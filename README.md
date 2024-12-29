@@ -6,7 +6,7 @@ Task Manager API es una API RESTful construida con Node.js, Express y MongoDB qu
 
 ## **Tabla de Contenidos**
 
-1. [Introducción](#introducción)
+1. [Introducción](#1.introducción)
 2. [Características](#características)
 3. [Tecnologías Utilizadas](#tecnologías-utilizadas)
 4. [Instalación y Configuración](#instalación-y-configuración)
