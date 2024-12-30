@@ -9,7 +9,7 @@ const options = {
             version: '1.0.0',
             description: 'API for managing tasks, created as Tech Test',
         },
-        servers: [{ url: 'http://localhost:3001/api' }],
+        servers: [{ url: 'https://ramontaskmanager.netlify.app/api' }],
         components: {
             securitySchemes: {
                 bearerAuth: {
