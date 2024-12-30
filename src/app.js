@@ -9,12 +9,18 @@ const errorHandler = require('./helper/errorHandler');
 require('dotenv').config();
 
 const app = express();
-
+const allowedOrigins = [process.env.URL_CLIENT, 'http://localhost:5173']; 
 app.use(cors({
-    origin: process.env.URL_CLIENT, // Permitir client url
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
-    credentials: true, 
-  }));
+  origin: (origin, callback) => {
+      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+          callback(null, origin); 
+      } else {
+          callback(new Error('No permitido por CORS')); 
+      }
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+}));
 app.use(bodyParser.json());
 app.use('/api', taskRoutes);
 app.use('/api/auth', authRoutes);
