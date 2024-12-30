@@ -2,6 +2,13 @@
 
 The **Task Manager API** is a backend service built using **Node.js** and **Express.js**, designed to efficiently manage tasks through a **RESTful API**. It integrates **MongoDB Atlas** for persistent data storage and leverages **JWT (JSON Web Tokens)** for authentication. This API provides full task management features, from creating tasks to updating and deleting them, while ensuring data validation and security. All endpoints are well-documented with **Swagger** for easy integration and understanding.
 
+## DEMO
+The Swagger Docmunetation of the endpoitns is live on 
+https://taskmanager-1-2y65.onrender.com/api-docs/
+
+App on React can be find on:
+https://ramontaskmanager.netlify.app/
+
 ## 🚀 Key Features
 
 ### Model (Task)
