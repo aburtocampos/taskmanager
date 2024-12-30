@@ -9,7 +9,7 @@ const options = {
             version: '1.0.0',
             description: 'API for managing tasks, created as Tech Test',
         },
-        servers: [{ url: 'https://ramontaskmanager.netlify.app/api' }],
+        servers: [{ url: 'https://taskmanager-1-2y65.onrender.com/api' }],
         components: {
             securitySchemes: {
                 bearerAuth: {
