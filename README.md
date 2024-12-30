@@ -182,14 +182,37 @@ The API uses structured error handling. Common HTTP status codes include:
 
 ## 🧪 Testing
 
-Unit tests for the backend are implemented using **Jest** and **Supertest**. These tests cover:
+This project includes a suite of automated tests to validate the correct functionality of the API endpoints. Tests for the backend are implemented using **Jest** and **Supertest**. These tests cover:
 
-- **Authentication**:
-  - User registration.
-  - User login.
-- **Tasks**:
-  - Full CRUD operations for tasks.
-  - Validation for required fields.
+- **Test Description**
+POST /api/tasks
+
+## Creates a New Task:
+Validates the creation of a new task with a title and description.
+## Prevents Duplicates:
+Ensures tasks with the same title cannot be created.
+Validations:
+## Returns an error if the title is missing.
+DELETE /api/tasks/:id
+
+Deletes an Existing Task:
+## Allows deletion of tasks using their taskId.
+Error for Non-Existent Task:
+## Returns an error if the task does not exist.
+GET /api/tasks/:id
+
+## Retrieves a Specific Task:
+Fetches details of an existing task.
+Errors:
+Returns an error if the task does not exist.
+Returns an error if the taskId is invalid.
+PUT /api/tasks/:id
+
+## Updates an Existing Task:
+Allows updating the title and description of a task.
+Errors:
+Returns an error if the task does not exist.
+Validates that the title is not missing during the update.
 
 To run the tests:
 ```bash
